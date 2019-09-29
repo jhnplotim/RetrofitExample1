@@ -11,11 +11,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:background="#FFF">
-
-
+        android:layout_weight="2"
+        android:background="#4B77BE"
+        android:gravity="center">
 
         <ProgressBar
             android:id="@+id/activity_main_progress_bar"
@@ -29,42 +27,72 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_weight="3">
+        android:layout_weight="6"
+        android:background="#4B77BE"
+        android:gravity="center">
         <TextView
+            android:layout_margin="5dp"
             android:id="@+id/activity_main_fact_txt_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:minHeight="100dp" />
+            android:minHeight="100dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
 
         <TextView
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="100dp"
-            android:id="@+id/activity_main_other_text_view"/>
+            android:id="@+id/activity_main_other_text_view"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
         <TextView
+            android:layout_margin="5dp"
             android:id="@+id/activity_main_no_internet_txt_view"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:text="No Internet Available!"
-            android:visibility="gone"/>
+            android:visibility="gone"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textAlignment="center"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#E4F1FE"
+        android:gravity="center"
+        android:layout_weight="2">
         <Button
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:padding="15dip"
             android:tag="10"
             android:text="Load"
-            android:onClick="onClickButton"/>
+            android:onClick="onClickButton"
+            android:background="@drawable/button_corner"/>
         <Button
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:textStyle="bold"
+            android:padding="15dip"
             android:tag="20"
             android:text="Load with Error"
-            android:onClick="onClickButton"/>
+            android:onClick="onClickButton"
+            android:background="@drawable/button_corner"/>
     </LinearLayout>
 
     </LinearLayout>
